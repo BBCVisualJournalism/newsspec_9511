@@ -1,0 +1,475 @@
+/* separate your sass into different files to keep it maintainable!  */
+/*  newsspec_9511  */
+
+/* Define global variables here for colour, font sizes etc...*/
+$font-color-default: #404040;
+$font-size-1: 1.00em;
+$font-size-button: 1.125em;
+$link-default: #404040;
+$link-hover: #1167a8;
+$path: '/news/special/2014/newsspec_9511/content/english/';
+$knocked-back: 0.2;
+
+a {
+	color: $link-default;
+}
+a:active,
+a:hover {
+	color: $link-hover;
+}
+
+.special-16 {
+	margin: 8px 0;
+	padding: 0;
+	font-weight: normal;
+	font-size: 1.0em;
+	line-height: 1.0em;
+	text-rendering: optimizeLegibility;
+	color: $font-color-default;
+}
+
+.ns__schools_nav {
+	width: 100%;
+	padding: 8px 8px 8px 8px;
+
+	.special-24 {
+		margin: 0;
+		font-size: 1.375em;
+		font-weight: bold;
+		line-height: 1.5em;
+		color: $font-color-default;
+	}
+}
+
+.ns__schools_nav {
+	padding: 8px 8px 8px 8px;
+	background: #ededed;
+}
+
+.ns__error_message {
+	color: #cc0000;
+	margin-bottom: 8px;
+}
+
+.ns__search_form_container {
+	position: relative;
+	margin-bottom: 0;
+}
+
+.ns__school_form {
+	margin-bottom: 0;
+
+	select {
+		font-size: $font-size-1;
+		line-height: $font-size-1;
+		padding: 7px 8px 10px 8px;
+		border: none;
+		width: 100%;
+		margin-top: 4px;
+		color: #a9a9a9;
+		background: url($path + 'img/search_icons.gif') no-repeat 98% -82px transparent;
+
+		option {
+			color: $font-color-default;
+		}
+		-webkit-appearance: none;
+	}
+
+	select:focus {
+		color: $font-color-default;
+	}
+
+	select:hover {
+		cursor: pointer;
+	}
+}
+
+form {
+	margin: 0;
+	padding: 0;
+	border: none;
+
+	fieldset {
+		/*display: inline-block;*/
+		float: left;
+		clear: none;
+		width: auto;
+		margin: 0 16px 0 0;
+		border: 0;
+		position: relative;
+		overflow: hidden;
+		padding: 0;
+		font-size: .9em;
+		label {
+			margin-left: 1px;
+		}
+	}
+	input[type=radio] {
+		margin:2px;
+	}
+	.ns__schools_nav_data_control {
+		input,
+		label {
+			width: auto;
+			float: left;
+			line-height: 1.0em;
+			margin-top: 4px;
+		}
+		label {
+			margin-left: 4px;
+			clear: none;
+		}
+		input {
+			padding-left: 5px;
+		}
+	}
+
+	span {
+		float: none;
+	}
+}
+
+.ns__input_wrapper {
+	display: block;
+	padding: 0;
+	background: #fff;
+	border: 1px solid transparent;
+	min-height: 42px;
+	margin-bottom: 13px;
+	position:relative;
+}
+
+.ns__postcode_form {
+
+	.ns__input_wrapper {
+		padding: 0 0 0 0;
+	}
+
+}
+
+.ns__schools_nav_cta {
+	line-height: $font-size-1;
+	clear: both;
+	color: #505050;
+	padding: 10px 0 10px 1px;
+}
+
+.ns__search_field {
+	display: inline-block;
+	clear: both;
+	width: 100%;
+	padding: 8px 0 10px 8px;
+	font-size: $font-size-1;
+	line-height: 1.5em;
+	border: none;
+}
+
+.ns__go_button {
+	z-index: 1;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 44px;
+	padding: 0;
+	border: none;
+	border-left: 8px solid #ededed;
+	font-size: $font-size-button;
+	line-height: 1.0em;
+	background: #505050;
+	color: #ffffff;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-appearance: none;
+}
+
+.ns__external_link {
+	position: relative;
+	top: 4px;
+}
+
+.ns__external_link:before {
+	content: "";
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url($path + 'img/search_icons.gif') no-repeat -3px -47px transparent;
+}
+
+.ns--disabled {
+	filter: alpha(opacity=20);
+	opacity: $knocked-back;
+	cursor: auto;
+}
+
+@include respondMinMax (false, 303px) {
+	.ns__search_form_container {
+		width: 178px + 50px;
+	}
+	.ns__input_wrapper {
+		width: 178px;
+	}
+
+	.ns__search_field {
+		width: 177px;
+	}
+}
+
+@include respondMinMax (304px, false) {
+	.ns__search_form_container {
+		width: 234px + 50px;
+	}
+	.ns__input_wrapper {
+		width: 234px;
+	}
+
+	.ns__search_field {
+		width: 225px;
+	}
+}
+
+@include respondMinMax (344px, false) {
+	.ns__search_form_container {
+		width: 278px + 50px;
+	}
+	.ns__input_wrapper {
+		width: 278px;
+	}
+
+	.ns__search_field {
+		width: 269px;
+	}
+}
+
+@include respondMinMax (364px, false) {
+	.ns__search_form_container {
+		width: 298px + 50px;
+	}
+	.ns__input_wrapper {
+		width: 298px;
+	}
+
+	.ns__search_field {
+		width: 289px;
+	}
+}
+
+@include respondMinMax (384px, false) {
+	.ns__search_form_container {
+		width: 318px + 50px;
+	}
+	.ns__input_wrapper {
+		width: 318px;
+	}
+
+	.ns__search_field {
+		width: 309px;
+	}
+}
+
+@include respondMinMax (464px, false) {
+	.ns__search_form_container {
+		width: 398px + 50px;
+	}
+	.ns__input_wrapper {
+		width: 398px;
+	}
+
+	.ns__search_field {
+		width: 389px;
+	}
+}
+
+@include respondMinMax (664px, false) {
+	.ns__schools_nav {
+		height: 190px;
+	}
+	.ns__search_form_container {
+		width: 100%;
+		float: left;
+	}
+	#ns__primary__school_user_form {
+		width: 50%;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+	.ns__input_wrapper {
+		width: 300px;
+	}
+
+	.ns__search_field {
+		width: 240px;
+	}
+
+	.ns__primary__school_user_form {
+		margin-left: 16px;
+	}
+}
+
+
+
+
+
+.ns__desktop {
+	/* Define global variables here for colour, font sizes etc...*/
+	$font-color-default: #505050;
+	$font-size-1: 1.00em;
+	$font-size-button: 1.125em;
+	$link-default: #1F4F82;
+	$link-hover: #123E60;
+	$link-visited: #4A7194;
+
+	a {
+		color: $link-default;
+	}
+	a:active,
+	a:hover {
+		color: $link-hover;
+	}
+	a:visited {
+		color: $link-visited;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+
+
+
+	.ns_9724 {
+		width: 100%;
+	}
+
+	.special-16 {
+		text-rendering: optimizeLegibility;
+		color: $font-color-default;
+	}
+
+	.ns__schools_nav {
+
+		.special-24 {
+			margin: 0;
+			font-size: 1.375em;
+			font-weight: bold;
+			letter-spacing: -1px;
+			line-height: 1.5em;
+			text-rendering: optimizeLegibility;
+			color: $font-color-default;
+		}
+	}
+
+	.ns__input_wrapper {
+		width: 234px;
+	}
+
+	.ns__search_field {
+		width: 225px;
+	}
+
+
+
+
+
+
+	.ns__search_form_container {
+		margin-bottom: 16px;
+	}
+
+	.ns__school_form {
+		margin-bottom: 8px;
+
+		select {
+			font-size: $font-size-1;
+			line-height: $font-size-1;
+			padding: 7px 8px 10px 8px;
+			border: none;
+			width: 100%;
+			margin-top: 4px;
+			color: #a9a9a9;
+			background: url($path + 'img/search_icons.gif') no-repeat 98% -82px transparent;
+
+			option {
+				color: $font-color-default;
+			}
+			-webkit-appearance: none;
+		}
+
+		select:focus {
+			color: $font-color-default;
+		}
+
+		select:hover {
+			cursor: pointer;
+		}
+	}
+
+	form {
+		margin: 0;
+		padding: 0;
+		border: none;
+
+		fieldset {
+			/*display: inline-block;*/
+			float: left;
+			clear: none;
+			width: auto;
+			margin-right: 16px;
+		}
+
+		.ns__schools_nav_data_control {
+			input,
+			label {
+				width: auto;
+				float: left;
+				line-height: 1.0em;
+				margin-top: 4px;
+			}
+			label {
+				margin-left: 4px;
+				clear: none;
+			}
+			input {
+				margin-left: 1px;
+			}
+		}
+
+		span {
+			float: none;
+		}
+	}
+
+	.ns__input_wrapper {
+		display: block;
+		padding: 0;
+		background: #fff;
+		border: 1px solid transparent;
+		min-height: 42px;
+		margin-bottom: 8px;
+	}
+
+	.ns__postcode_form {
+
+		.ns__input_wrapper {
+			padding: 0 0 0 0;
+		}
+
+	}
+
+	.ns__schools_nav_cta {
+		line-height: $font-size-1;
+		clear: both;
+	}
+
+	.ns__search_field {
+		display: inline-block;
+		clear: both;
+		width: 100%;
+		padding: 8px 0 10px 8px;
+		font-size: $font-size-1;
+		line-height: 1.5em;
+		border: none;
+	}
+
+}

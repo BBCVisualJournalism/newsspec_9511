@@ -1,0 +1,17 @@
+$fix-mqs: 1024px;
+
+@import "main";
+
+#ns__primary__school_user_form {
+    position: static;
+}
+
+.ns__search_form_container {
+    width: 448px;
+    float: none;
+}
+
+.ns__schools_nav {
+    height: auto;
+    overflow: hidden;
+}
